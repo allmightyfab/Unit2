@@ -13,6 +13,7 @@ async function running(){
     })
 
     var results=await Promise.all([runner1Go, runner2Go]);
+    
     return [results[0], results[1], loser];
 
 
