@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (taskDescription !== '') {
             const task = new Task(taskDescription);
             addTaskToList(task);
-            taskInput.value = ''; // Clear input field
+            taskInput.value = ''; 
         }
     });
 
