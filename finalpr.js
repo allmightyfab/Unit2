@@ -32,13 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const taskItem = document.createElement('li');
         taskItem.textContent = task.description;
         
-        // Add delete button
+    
         const deleteBtn = document.createElement('button');
         deleteBtn.textContent = 'x';
         deleteBtn.classList.add('delete-btn');
         deleteBtn.addEventListener('click', function(event) {
             tasksList.removeChild(taskItem);
-            event.stopPropagation(); // Prevent li click event from firing
+            event.stopPropagation(); 
         });
         
         taskItem.appendChild(deleteBtn);
